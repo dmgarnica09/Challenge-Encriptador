@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--Encriptador de Texto.
+	Versión 1.0
+	fecha: Septiembre de 2022.
+	Autor: Diego Garnica
+-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Encriptador</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>     
+        <ul class="Contenido">
+            <li>
+                <div class="logo">
+                    <img src="imagenes/Logo.png" alt="logo-alura">
+                </div> 
+                <form>  
+
+                    <div class="inputarea">
+                        <textarea cols="70" rows="10" placeholder="Ingrese el texto aqui" id="input" class="scroll"></textarea>
+                    </div>
+
+                    <div>
+                        <p><img src="imagenes/Vector.png" alt="vector" class="vector"> Solo letras  minúsculas y sin acentos</p>
+                    </div>
+
+                    <div class="botonera">                            
+                        <button type="button" class="boton botonE" onclick="procesarTexto(1)">Encriptar</button>
+                        <button type="button" class="boton botonD" onclick="procesarTexto(2)">Desencriptar</button>
+                    </div>
+                </form>
+            </li>
+                    
+            <li>
+                <section class="resultado">
+                    <div id="nodata">
+                        <img src="imagenes/Muñecoimagen.png" alt="Buscando..." class="muñeco">
+                        <p>Ningún mensaje fue encontrado</p>
+                        <p>Ingresa texto que deseas encriptar o desencriptar.</p>
+                    </div>
+
+                    <div id="data">
+                        <div class="muestra-result scroll">
+                            <p id="resultt"></p>
+                        </div>
+                        <button type="button" class="boton botonR" onclick="copiarTexto()">Copiar</button>
+                    </div>
+            </li>
+
+        </ul>
+    </main>
+    <footer class="footer">
+        <p>&#9401 Desarrollado por Diego Mauricio Garnica - Grupo 3 Alura</p>
+        <br>
+        <a href="https://www.linkedin.com/in/dmgarnica09/"><img src="imagenes/Linkedin.png" class="pgn" alt="icono Linkedin"></a>
+        <a href="https://github.com/dmgarnica09"><img src="imagenes/GitHub.png" class="pgn" alt="icono GitHub"></a>
+        <a href="https://twitter.com/d_garnica23"><img src="imagenes/Twitter.png" class="pgn" alt="icono Twitter"></a>
+        <br>
+        <br>
+        <p>2022</p>
+    </footer>
+    
+</body>
+
+<script type="text/javascript" src="script/main.js"></script>
+
+</html>
